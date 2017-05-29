@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <groups>
+    <run>
+    <include name="Sanity"/>
+    <include name="SQL"/>
+    </run>
+ </groups> 
+   
+  <test name="Test 1">
+   <classes>
+      <class name="Sanity_Test.Admin_User"/>
+    </classes>  
+  </test><!-- Test -->
+  
+  <test name="Test 2">
+    <classes>
+        <class name="Sanity_Test.Registered_User"/>
+    </classes>
+  </test><!-- Test -->
+  
+  <test name="Test 3">
+     <classes>
+      <class name="Sanity_Test.New_User"/>
+   </classes> 
+  </test><!--  Test -->
+  
+ <test name="Test 4">
+     <classes>
+      <class name="Sanity_Test.SQL_Queries"/>
+   </classes> 
+  </test><!--  Test --> 
+  
+</suite> <!-- Suite -->

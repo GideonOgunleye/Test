@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\Gideon Okunleye\workspace\SSL247_Test\Sanity_Test.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.New_User" hash-for-method="Ask_a_question">Ask_a_question</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Admin_User" hash-for-method="Create_Proposal">Create_Proposal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Registered_User" hash-for-method="Create_User">Create_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Registered_User" hash-for-method="Domain_Name_Ordering">Domain_Name_Ordering</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Admin_User" hash-for-method="Edit_Account_User">Edit_Account_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Registered_User" hash-for-method="Edit_User">Edit_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.New_User" hash-for-method="Get_in_Touch">Get_in_Touch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.New_User" hash-for-method="Log_Out_New_User">Log_Out_New_User</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Registered_User" hash-for-method="Order_RapidSSL">Order_RapidSSL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.New_User" hash-for-method="Request_a_Bronchure">Request_a_Bronchure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.New_User" hash-for-method="Request_a_PenTest_Proposal">Request_a_PenTest_Proposal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.SQL_Queries" hash-for-method="SQL_Certificate_Order">SQL_Certificate_Order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.SQL_Queries" hash-for-method="SQL_DeleteAccount">SQL_DeleteAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.SQL_Queries" hash-for-method="SQL_DeleteUser">SQL_DeleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Admin_User" hash-for-method="Send_Change_Password_Request_Email">Send_Change_Password_Request_Email</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.Admin_User" hash-for-method="Send_Fulfillment_Email">Send_Fulfillment_Email</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sanity_Test.New_User" hash-for-method="User_Registration">User_Registration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Sanity_Test.Registered_User</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Create_User">
+                  </a> <!-- Create_User -->
+                  <span class="method-name">Create_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Domain_Name_Ordering">
+                  </a> <!-- Domain_Name_Ordering -->
+                  <span class="method-name">Domain_Name_Ordering</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_User">
+                  </a> <!-- Edit_User -->
+                  <span class="method-name">Edit_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Order_RapidSSL">
+                  </a> <!-- Order_RapidSSL -->
+                  <span class="method-name">Order_RapidSSL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Sanity_Test.Admin_User</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Create_Proposal">
+                  </a> <!-- Create_Proposal -->
+                  <span class="method-name">Create_Proposal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Edit_Account_User">
+                  </a> <!-- Edit_Account_User -->
+                  <span class="method-name">Edit_Account_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Send_Change_Password_Request_Email">
+                  </a> <!-- Send_Change_Password_Request_Email -->
+                  <span class="method-name">Send_Change_Password_Request_Email</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Send_Fulfillment_Email">
+                  </a> <!-- Send_Fulfillment_Email -->
+                  <span class="method-name">Send_Fulfillment_Email</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Sanity_Test.SQL_Queries</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SQL_Certificate_Order">
+                  </a> <!-- SQL_Certificate_Order -->
+                  <span class="method-name">SQL_Certificate_Order</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SQL_DeleteAccount">
+                  </a> <!-- SQL_DeleteAccount -->
+                  <span class="method-name">SQL_DeleteAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SQL_DeleteUser">
+                  </a> <!-- SQL_DeleteUser -->
+                  <span class="method-name">SQL_DeleteUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Sanity_Test.New_User</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Ask_a_question">
+                  </a> <!-- Ask_a_question -->
+                  <span class="method-name">Ask_a_question</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Get_in_Touch">
+                  </a> <!-- Get_in_Touch -->
+                  <span class="method-name">Get_in_Touch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Log_Out_New_User">
+                  </a> <!-- Log_Out_New_User -->
+                  <span class="method-name">Log_Out_New_User</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Request_a_Bronchure">
+                  </a> <!-- Request_a_Bronchure -->
+                  <span class="method-name">Request_a_Bronchure</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Request_a_PenTest_Proposal">
+                  </a> <!-- Request_a_PenTest_Proposal -->
+                  <span class="method-name">Request_a_PenTest_Proposal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Registration">
+                  </a> <!-- User_Registration -->
+                  <span class="method-name">User_Registration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Gideon Okunleye\workspace\SSL247_Test\Sanity_Test.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Sanity&quot;/&gt;
+      &lt;include name=&quot;SQL&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test name=&quot;Test 1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Sanity_Test.Admin_User&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test 1 --&gt;
+  &lt;test name=&quot;Test 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Sanity_Test.Registered_User&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test 2 --&gt;
+  &lt;test name=&quot;Test 3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Sanity_Test.New_User&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test 3 --&gt;
+  &lt;test name=&quot;Test 4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Sanity_Test.SQL_Queries&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test 4 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test 2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test 3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test 4 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">SQL</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">SQL_Certificate_Order</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SQL_DeleteAccount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SQL_DeleteUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Ask_a_question</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Create_Proposal</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Create_User</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Domain_Name_Ordering</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Edit_Account_User</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Edit_User</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Get_in_Touch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Log_Out_New_User</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Order_RapidSSL</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Request_a_Bronchure</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Request_a_PenTest_Proposal</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Send_Change_Password_Request_Email</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Send_Fulfillment_Email</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">User_Registration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Order_RapidSSL')
+data.setCell(0, 2, 'Sanity_Test.Registered_User')
+data.setCell(0, 3, 128618);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Create_Proposal')
+data.setCell(1, 2, 'Sanity_Test.Admin_User')
+data.setCell(1, 3, 84726);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Domain_Name_Ordering')
+data.setCell(2, 2, 'Sanity_Test.Registered_User')
+data.setCell(2, 3, 64869);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Edit_User')
+data.setCell(3, 2, 'Sanity_Test.Registered_User')
+data.setCell(3, 3, 45842);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Send_Fulfillment_Email')
+data.setCell(4, 2, 'Sanity_Test.Admin_User')
+data.setCell(4, 3, 32704);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Edit_Account_User')
+data.setCell(5, 2, 'Sanity_Test.Admin_User')
+data.setCell(5, 3, 29902);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'User_Registration')
+data.setCell(6, 2, 'Sanity_Test.New_User')
+data.setCell(6, 3, 29349);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Send_Change_Password_Request_Email')
+data.setCell(7, 2, 'Sanity_Test.Admin_User')
+data.setCell(7, 3, 28583);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Create_User')
+data.setCell(8, 2, 'Sanity_Test.Registered_User')
+data.setCell(8, 3, 17230);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Get_in_Touch')
+data.setCell(9, 2, 'Sanity_Test.New_User')
+data.setCell(9, 3, 14112);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Ask_a_question')
+data.setCell(10, 2, 'Sanity_Test.New_User')
+data.setCell(10, 3, 8082);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Request_a_Bronchure')
+data.setCell(11, 2, 'Sanity_Test.New_User')
+data.setCell(11, 3, 7400);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Request_a_PenTest_Proposal')
+data.setCell(12, 2, 'Sanity_Test.New_User')
+data.setCell(12, 3, 7063);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Log_Out_New_User')
+data.setCell(13, 2, 'Sanity_Test.New_User')
+data.setCell(13, 3, 3284);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'SQL_Certificate_Order')
+data.setCell(14, 2, 'Sanity_Test.SQL_Queries')
+data.setCell(14, 3, 793);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'SQL_DeleteAccount')
+data.setCell(15, 2, 'Sanity_Test.SQL_Queries')
+data.setCell(15, 3, 544);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'SQL_DeleteUser')
+data.setCell(16, 2, 'Sanity_Test.SQL_Queries')
+data.setCell(16, 3, 289);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Sanity_Test.Admin_User</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">Admin_Login</span>
+                <span class="method-start">2827 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Create_Proposal</span>
+                <span class="method-start">16518 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Log_Out([TestResult name=Create_Proposal status=SUCCESS method=Admin_User.Create_Proposal()[pri:0, instance:...)</span>
+                <span class="method-start">101245 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Admin_Login</span>
+                <span class="method-start">119942 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Edit_Account_User</span>
+                <span class="method-start">130818 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Log_Out([TestResult name=Edit_Account_User status=SUCCESS method=Admin_User.Edit_Account_User()[pri:0, insta...)</span>
+                <span class="method-start">160721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Admin_Login</span>
+                <span class="method-start">179011 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Send_Change_Password_Request_Email</span>
+                <span class="method-start">190100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Log_Out([TestResult name=Send_Change_Password_Request_Email status=SUCCESS method=Admin_User.Send_Change_Pas...)</span>
+                <span class="method-start">218685 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">Admin_Login</span>
+                <span class="method-start">236517 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Send_Fulfillment_Email</span>
+                <span class="method-start">247120 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Log_Out([TestResult name=Send_Fulfillment_Email status=SUCCESS method=Admin_User.Send_Fulfillment_Email()[pr...)</span>
+                <span class="method-start">279825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">297563 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Sanity_Test.Registered_User</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">299674 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">User_Login</span>
+                <span class="method-start">301873 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Order_RapidSSL</span>
+                <span class="method-start">320881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">User_Logout([TestResult name=Order_RapidSSL status=SUCCESS method=Registered_User.Order_RapidSSL()[pri:1, instan...)</span>
+                <span class="method-start">449502 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">User_Login</span>
+                <span class="method-start">467692 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Create_User</span>
+                <span class="method-start">481475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">User_Logout([TestResult name=Create_User status=SUCCESS method=Registered_User.Create_User()[pri:2, instance:San...)</span>
+                <span class="method-start">498706 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">User_Login</span>
+                <span class="method-start">516405 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Edit_User</span>
+                <span class="method-start">530671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">User_Logout([TestResult name=Edit_User status=SUCCESS method=Registered_User.Edit_User()[pri:3, instance:Sanity_...)</span>
+                <span class="method-start">576514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">User_Login</span>
+                <span class="method-start">594608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Domain_Name_Ordering</span>
+                <span class="method-start">610356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">User_Logout([TestResult name=Domain_Name_Ordering status=SUCCESS method=Registered_User.Domain_Name_Ordering()[p...)</span>
+                <span class="method-start">675225 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">696570 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Sanity_Test.New_User</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">BeforeTest</span>
+                <span class="method-start">698530 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">User_Registration</span>
+                <span class="method-start">715713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftermethod([TestResult name=User_Registration status=SUCCESS method=New_User.User_Registration()[pri:0, instanc...)</span>
+                <span class="method-start">745063 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Log_Out_New_User</span>
+                <span class="method-start">752253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftermethod([TestResult name=Log_Out_New_User status=SUCCESS method=New_User.Log_Out_New_User()[pri:1, instance:...)</span>
+                <span class="method-start">755538 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Get_in_Touch</span>
+                <span class="method-start">762643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftermethod([TestResult name=Get_in_Touch status=SUCCESS method=New_User.Get_in_Touch()[pri:2, instance:Sanity_T...)</span>
+                <span class="method-start">776756 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Ask_a_question</span>
+                <span class="method-start">785430 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftermethod([TestResult name=Ask_a_question status=SUCCESS method=New_User.Ask_a_question()[pri:3, instance:Sani...)</span>
+                <span class="method-start">793513 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Request_a_Bronchure</span>
+                <span class="method-start">800830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftermethod([TestResult name=Request_a_Bronchure status=SUCCESS method=New_User.Request_a_Bronchure()[pri:4, ins...)</span>
+                <span class="method-start">808233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Request_a_PenTest_Proposal</span>
+                <span class="method-start">816671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Aftermethod([TestResult name=Request_a_PenTest_Proposal status=SUCCESS method=New_User.Request_a_PenTest_Proposa...)</span>
+                <span class="method-start">823735 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest</span>
+                <span class="method-start">833193 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Sanity_Test.SQL_Queries</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SQL_DeleteAccount</span>
+                <span class="method-start">844150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SQL_DeleteUser</span>
+                <span class="method-start">844695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SQL_Certificate_Order</span>
+                <span class="method-start">844985 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
